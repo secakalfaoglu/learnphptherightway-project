@@ -1,0 +1,188 @@
+Index: src/public/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n\r\n    require_once '../Transaction.php';\r\n\r\n    // Classes & Objects\r\n\r\n    //$transaction =new Transaction(100,'Transaction 1');\r\n    //$transaction -> addTax(8);\r\n    //$transaction -> applyDiscount(10);\r\n    //$transaction ->addTax(8)->applyDiscount(10);\r\n    //$transaction->amount=15;\r\n    //var_dump($transaction ->getAmount());\r\n\r\n    /*$amount = (new Transaction(100, 'Transaction 1'))\r\n        ->addTax(8)\r\n        ->applyDiscount(10)\r\n        ->getAmount();*/\r\n\r\n    /*$class = 'Transaction';\r\n\r\n    $amount = (new $class(100, 'Transaction 1'))\r\n        ->addTax(8)\r\n        ->applyDiscount(10)\r\n        ->getAmount();\r\n\r\n    var_dump($amount);*/\r\n\r\n   /* $transaction1 = (new Transaction(100, 'Transaction 1'))\r\n        ->addTax(8)\r\n        ->applyDiscount(10);\r\n    $transaction2 = (new Transaction(200, 'Transaction 2'))\r\n        ->addTax(8)\r\n        ->applyDiscount(15);\r\n\r\n    var_dump($transaction1->getAmount(), $transaction2->getAmount());*/\r\n\r\n    /*$amount = (new Transaction(100, 'Transaction 1'))\r\n        ->addTax(8)\r\n        ->applyDiscount(10)\r\n        ->getAmount();\r\n    var_dump($amount);*/\r\n\r\n   /* $transaction = (new Transaction(100, 'Transaction 1'))\r\n        ->addTax(8)\r\n        ->applyDiscount(10);*/\r\n\r\n    //var_dump($transaction->getAmount());\r\n\r\n   // $amount = $transaction->getAmount();\r\n/*var_dump($amount);*/\r\n\r\n    /*unset($transaction);\r\n    var_dump($amount);*/\r\n\r\n    //$transaction=null;\r\n    //exit;\r\n    //var_dump($amount);\r\n\r\n    $str = '{\"a\":1,\"b\":2,\"c\":3}';\r\n\r\n    $arr = json_decode($str, true);\r\n    var_dump($arr);\r\n\r\n    $arr = json_decode($str);\r\n    var_dump($arr);\r\n    var_dump($arr->a);\r\n    var_dump($arr->b);\r\n    var_dump($arr->c);\r\n\r\n    $obj = new \\stdClass();\r\n    $obj->a = 1;\r\n    $obj->b = 2;\r\n    $obj->c = 3;\r\n\r\n    var_dump($obj);\r\n\r\n\r\n    $arr=[1,2,3];\r\n    var_dump((object)$arr);\r\n\r\n    $obj =(object)$arr;\r\n    var_dump($obj ->{0});\r\n    var_dump($obj ->{1});\r\n    var_dump($obj ->{2});\r\n\r\n\r\n    var_dump((object)1);\r\n\r\n    $obj = (object) 1;\r\n    var_dump($obj -> scalar);\r\n\r\n    $obj = (object) true;\r\n    var_dump($obj -> scalar);\r\n\r\n    $obj = (object) false;\r\n    var_dump($obj -> scalar);\r\n\r\n    $obj = (object) null;\r\n    var_dump($obj);\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/public/index.php b/src/public/index.php
+--- a/src/public/index.php	(revision 77076aec1bb2e52b0b3b262e20c5cb2b17f01de1)
++++ b/src/public/index.php	(date 1724831716534)
+@@ -1,110 +1,3 @@
+ <?php
+-
+-    require_once '../Transaction.php';
+-
+-    // Classes & Objects
+-
+-    //$transaction =new Transaction(100,'Transaction 1');
+-    //$transaction -> addTax(8);
+-    //$transaction -> applyDiscount(10);
+-    //$transaction ->addTax(8)->applyDiscount(10);
+-    //$transaction->amount=15;
+-    //var_dump($transaction ->getAmount());
+-
+-    /*$amount = (new Transaction(100, 'Transaction 1'))
+-        ->addTax(8)
+-        ->applyDiscount(10)
+-        ->getAmount();*/
+-
+-    /*$class = 'Transaction';
+-
+-    $amount = (new $class(100, 'Transaction 1'))
+-        ->addTax(8)
+-        ->applyDiscount(10)
+-        ->getAmount();
+-
+-    var_dump($amount);*/
+-
+-   /* $transaction1 = (new Transaction(100, 'Transaction 1'))
+-        ->addTax(8)
+-        ->applyDiscount(10);
+-    $transaction2 = (new Transaction(200, 'Transaction 2'))
+-        ->addTax(8)
+-        ->applyDiscount(15);
+-
+-    var_dump($transaction1->getAmount(), $transaction2->getAmount());*/
+-
+-    /*$amount = (new Transaction(100, 'Transaction 1'))
+-        ->addTax(8)
+-        ->applyDiscount(10)
+-        ->getAmount();
+-    var_dump($amount);*/
+-
+-   /* $transaction = (new Transaction(100, 'Transaction 1'))
+-        ->addTax(8)
+-        ->applyDiscount(10);*/
+-
+-    //var_dump($transaction->getAmount());
+-
+-   // $amount = $transaction->getAmount();
+-/*var_dump($amount);*/
+-
+-    /*unset($transaction);
+-    var_dump($amount);*/
+-
+-    //$transaction=null;
+-    //exit;
+-    //var_dump($amount);
+-
+-    $str = '{"a":1,"b":2,"c":3}';
+-
+-    $arr = json_decode($str, true);
+-    var_dump($arr);
+-
+-    $arr = json_decode($str);
+-    var_dump($arr);
+-    var_dump($arr->a);
+-    var_dump($arr->b);
+-    var_dump($arr->c);
+-
+-    $obj = new \stdClass();
+-    $obj->a = 1;
+-    $obj->b = 2;
+-    $obj->c = 3;
+-
+-    var_dump($obj);
+-
+-
+-    $arr=[1,2,3];
+-    var_dump((object)$arr);
+-
+-    $obj =(object)$arr;
+-    var_dump($obj ->{0});
+-    var_dump($obj ->{1});
+-    var_dump($obj ->{2});
+-
+-
+-    var_dump((object)1);
+-
+-    $obj = (object) 1;
+-    var_dump($obj -> scalar);
+-
+-    $obj = (object) true;
+-    var_dump($obj -> scalar);
+-
+-    $obj = (object) false;
+-    var_dump($obj -> scalar);
+-
+-    $obj = (object) null;
+-    var_dump($obj);
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
++require_once '../Transaction.php';
+ ?>
+\ No newline at end of file
+Index: src/Transaction.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n    declare(strict_types=1);\r\n    class Transaction{\r\n        private float $amount =15;\r\n\r\n        //private $amount; --> fatal error alırsın burda\r\n        private string $description;\r\n\r\n        public function __construct(float $amount,string $description)\r\n        {\r\n            $this->amount = $amount;\r\n            $this->description = $description;\r\n\r\n        }\r\n\r\n        /*public function addTax (float $rate)\r\n        {\r\n            $this ->amount += $this->amount * $rate /100;\r\n        }*/\r\n\r\n        public function addTax (float $rate) : Transaction\r\n        {\r\n            $this ->amount += $this->amount * $rate /100;\r\n            return $this;\r\n        }\r\n\r\n        public function applyDiscount (float $rate) :Transaction\r\n        {\r\n            $this->amount -= $this->amount * $rate /100;\r\n            return $this;\r\n        }\r\n\r\n        public function getAmount():float\r\n        {\r\n            return $this->amount;\r\n        }\r\n\r\n        public function __destruct()\r\n        {\r\n            echo 'Destruct' . $this->description . '<br/>';\r\n        }\r\n    }\r\n\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Transaction.php b/src/Transaction.php
+--- a/src/Transaction.php	(revision 77076aec1bb2e52b0b3b262e20c5cb2b17f01de1)
++++ b/src/Transaction.php	(date 1724832230454)
+@@ -1,44 +1,19 @@
+ <?php
++
+     declare(strict_types=1);
+-    class Transaction{
+-        private float $amount =15;
+-
+-        //private $amount; --> fatal error alırsın burda
+-        private string $description;
+ 
+-        public function __construct(float $amount,string $description)
+-        {
+-            $this->amount = $amount;
+-            $this->description = $description;
++    class Transaction
++    {
+ 
+-        }
+ 
+-        /*public function addTax (float $rate)
+-        {
+-            $this ->amount += $this->amount * $rate /100;
+-        }*/
+ 
+-        public function addTax (float $rate) : Transaction
+-        {
+-            $this ->amount += $this->amount * $rate /100;
+-            return $this;
+-        }
++        public function __construct(
++            private float $amount,
++            //private $description
++            private string $description
++        ){
+ 
+-        public function applyDiscount (float $rate) :Transaction
+-        {
+-            $this->amount -= $this->amount * $rate /100;
+-            return $this;
++            echo $this-> amount;
+         }
+-
+-        public function getAmount():float
+-        {
+-            return $this->amount;
+-        }
+-
+-        public function __destruct()
+-        {
+-            echo 'Destruct' . $this->description . '<br/>';
+-        }
+     }
+-
+ ?>
+\ No newline at end of file
