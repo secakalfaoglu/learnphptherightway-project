@@ -1,44 +1,26 @@
 <?php
+
     declare(strict_types=1);
-    class Transaction{
-        private float $amount =15;
 
-        //private $amount; --> fatal error alırsın burda
-        private string $description;
+    class Transaction
+    {
 
-        public function __construct(float $amount,string $description)
-        {
-            $this->amount = $amount;
-            $this->description = $description;
+        //public ?Customer $customer = null;
+        private ?Customer $customer = null;
 
+        public function __construct(
+            private float $amount,
+            //private $description
+            private string $description
+        ){
+
+            echo $this-> amount;
+            echo $amount;
         }
 
-        /*public function addTax (float $rate)
+        public function getCustomer(): ?Customer
         {
-            $this ->amount += $this->amount * $rate /100;
-        }*/
-
-        public function addTax (float $rate) : Transaction
-        {
-            $this ->amount += $this->amount * $rate /100;
-            return $this;
-        }
-
-        public function applyDiscount (float $rate) :Transaction
-        {
-            $this->amount -= $this->amount * $rate /100;
-            return $this;
-        }
-
-        public function getAmount():float
-        {
-            return $this->amount;
-        }
-
-        public function __destruct()
-        {
-            echo 'Destruct' . $this->description . '<br/>';
+            return $this->customer;
         }
     }
-
 ?>
