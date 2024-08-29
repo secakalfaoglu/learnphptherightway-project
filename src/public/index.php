@@ -11,23 +11,25 @@ spl_autoload_register(function ($class) {
     //var_dump('Autoloader 1');
 });*/
 
-/*spl_autoload_register(function ($class) {
-    var_dump('Autoloader 2');
-},prepend:true);*/
-//prepend kullanılmadığında autolod'ı sırayla görür
-
-require __DIR__ . '/../vendor/autoload.php';
+use App\Enums\Status;
 use App\PaymentGateway\Paddle\Transaction;
 
-
-$paddleTransaction = new Transaction();
-
+require __DIR__ . '/../vendor/autoload.php';
 
 
-$id =new \Ramsey\Uuid\UuidFactory();
-echo $id->uuid4();
+$transaction = new Transaction();
 
-var_dump($paddleTransaction);
+//echo Transaction::STATUS_PAID;
+//echo $transaction::STATUS_PAID;
+
+//echo $transaction::class;
+//echo Transaction::class;
+
+//$transaction->setStatus('paid');
+$transaction->setStatus(Status::PAID);
+
+var_dump($transaction);
+
 ?>
 
 
