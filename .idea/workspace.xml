@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Nullsafe Operator">
-      <change afterPath="$PROJECT_DIR$/src/Notification/Email.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentGateway/Paddle/CustomerProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentGateway/Paddle/DateTime.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentGateway/Paddle/Transaction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PaymentGateway/Stripe/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentProfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Transaction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notification/Email.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Notification/Email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentGateway/Paddle/CustomerProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/CustomerProfile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentGateway/Paddle/DateTime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentGateway/Paddle/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentGateway/Stripe/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PaymentGateway/Stripe/Transaction.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +20,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2.3" />
+        <entry key="$PROJECT_DIR$" value="2.4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +46,15 @@
     &quot;accountId&quot;: &quot;4317edfb-ba64-45c6-86f3-368ea8aa021e&quot;
   }
 }</component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/docker/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+    </include_path>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,22 +63,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHP Script.Transaction.php.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2.4",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.Transaction.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2.5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src" />
+      <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src\public" />
+      <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\docker" />
+      <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src\app" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -95,6 +108,8 @@
       <workItem from="1724743392529" duration="2798000" />
       <workItem from="1724746220273" duration="13191000" />
       <workItem from="1724825620987" duration="16502000" />
+      <workItem from="1724911449073" duration="12862000" />
+      <workItem from="1724935104371" duration="3330000" />
     </task>
     <task id="LOCAL-00001" summary="2.1">
       <option name="closed" value="true" />
