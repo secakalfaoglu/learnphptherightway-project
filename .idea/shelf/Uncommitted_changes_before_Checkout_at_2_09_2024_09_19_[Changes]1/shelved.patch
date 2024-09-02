@@ -1,0 +1,116 @@
+Index: src/public/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n\r\n\r\n/*\r\nspl_autoload_register(function ($class) {\r\n    $path = __DIR__ . '/../' . lcfirst(str_replace('\\\\','/',$class) . '.php');\r\n    if (file_exists($path)) {\r\n        require_once $path;\r\n    }\r\n\r\n    //var_dump('Autoloader 1');\r\n});*/\r\n\r\nuse App\\Enums\\Status;\r\nuse App\\PaymentGateway\\Paddle\\Transaction;\r\n\r\nrequire __DIR__ . '/../vendor/autoload.php';\r\n\r\n\r\n$transaction = new Transaction();\r\n\r\n//echo Transaction::STATUS_PAID;\r\n//echo $transaction::STATUS_PAID;\r\n\r\n//echo $transaction::class;\r\n//echo Transaction::class;\r\n\r\n//$transaction->setStatus('paid');\r\n$transaction->setStatus(Status::PAID);\r\n\r\nvar_dump($transaction);\r\n\r\n?>\r\n\r\n\r\n\r\n\r\n<?php\r\n/*class Car {\r\npublic string $marka;\r\npublic string $model;\r\npublic string $yil;\r\n\r\npublic function __construct(string $marka, string $model, int $yil) {\r\n$this->marka = $marka;\r\n$this->model = $model;\r\n$this->yil = $yil;\r\n}\r\n\r\n    public function getCarDetails(): string {\r\n        return $this->yil . ' ' . $this->marka . ' ' . $this->model;\r\n    }\r\n}\r\n\r\n\r\n\r\n$myCar = new Car('Toyota', 'Corolla', 2020);\r\necho $myCar->getCarDetails(); // Çıktı: 2020 Toyota Corolla\r\n\r\n*/?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/public/index.php b/src/public/index.php
+--- a/src/public/index.php	(revision 0604248776d6e30425c5f4071c6c75b38c1eec46)
++++ b/src/public/index.php	(date 1725257884633)
+@@ -1,34 +1,13 @@
+ <?php
+ 
+ 
+-/*
+-spl_autoload_register(function ($class) {
+-    $path = __DIR__ . '/../' . lcfirst(str_replace('\\','/',$class) . '.php');
+-    if (file_exists($path)) {
+-        require_once $path;
+-    }
+-
+-    //var_dump('Autoloader 1');
+-});*/
+-
+-use App\Enums\Status;
+ use App\PaymentGateway\Paddle\Transaction;
+ 
+ require __DIR__ . '/../vendor/autoload.php';
+ 
+ 
+-$transaction = new Transaction();
+-
+-//echo Transaction::STATUS_PAID;
+-//echo $transaction::STATUS_PAID;
+-
+-//echo $transaction::class;
+-//echo Transaction::class;
+-
+-//$transaction->setStatus('paid');
+-$transaction->setStatus(Status::PAID);
+-
+-var_dump($transaction);
++$transaction = new Transaction(25,'Transaction 1');
++var_dump($transaction::$count);
+ 
+ ?>
+ 
+Index: src/app/PaymentGateway/Paddle/Transaction.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n    declare(strict_types=1);\r\n\r\n    namespace app\\PaymentGateway\\Paddle;\r\n    use App\\Enums\\Status;\r\n\r\n\r\n\r\n    class Transaction\r\n    {\r\n//        private const STATUS_PAID = 'paid';\r\n\r\n\r\n        private string $status ;\r\n        public function __construct()\r\n        {\r\n            //$this->setStatus('pending');\r\n            $this->setStatus(Status::PENDING);\r\n            //var_dump(self::STATUS_PAID);\r\n        }\r\n//        public function setStatus(string $status) : Transaction\r\n//        {\r\n//            $this->status = $status;\r\n//            return $this;\r\n//        }\r\n        public function setStatus(string $status) : self\r\n        {\r\n            if (! isset(Status::ALL_STATUSES[$status])) {\r\n                throw new \\InvalidArgumentException(\"Invalid status\");\r\n            }\r\n\r\n            $this->status = $status;\r\n            return $this;\r\n        }\r\n\r\n    }\r\n\r\n\r\n?>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app/PaymentGateway/Paddle/Transaction.php b/src/app/PaymentGateway/Paddle/Transaction.php
+--- a/src/app/PaymentGateway/Paddle/Transaction.php	(revision 0604248776d6e30425c5f4071c6c75b38c1eec46)
++++ b/src/app/PaymentGateway/Paddle/Transaction.php	(date 1725257823937)
+@@ -8,29 +8,18 @@
+ 
+     class Transaction
+     {
+-//        private const STATUS_PAID = 'paid';
+ 
++        public static int $count=0;
+ 
+-        private string $status ;
+-        public function __construct()
+-        {
+-            //$this->setStatus('pending');
+-            $this->setStatus(Status::PENDING);
+-            //var_dump(self::STATUS_PAID);
++        public function __construct(
++            public float $amount,
++            public string $description
++        ){
++
+         }
+-//        public function setStatus(string $status) : Transaction
+-//        {
+-//            $this->status = $status;
+-//            return $this;
+-//        }
+-        public function setStatus(string $status) : self
+-        {
+-            if (! isset(Status::ALL_STATUSES[$status])) {
+-                throw new \InvalidArgumentException("Invalid status");
+-            }
+ 
+-            $this->status = $status;
+-            return $this;
++        public function process(){
++            echo 'Processing paddle transaction...' ;
+         }
+ 
+     }
+Index: .idea/php.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"MessDetectorOptionsConfiguration\">\r\n    <option name=\"transferred\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PHPCSFixerOptionsConfiguration\">\r\n    <option name=\"transferred\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PHPCodeSnifferOptionsConfiguration\">\r\n    <option name=\"highlightLevel\" value=\"WARNING\" />\r\n    <option name=\"transferred\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PhpIncludePathManager\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/docker/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/ramsey/uuid\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/brick/math\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/ramsey/collection\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"PhpProjectSharedConfiguration\" php_language_level=\"8.3\" />\r\n  <component name=\"PhpStanOptionsConfiguration\">\r\n    <option name=\"transferred\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PhpUnit\">\r\n    <phpunit_settings>\r\n      <PhpUnitSettings custom_loader_path=\"$PROJECT_DIR$/src/vendor/autoload.php\" />\r\n    </phpunit_settings>\r\n  </component>\r\n  <component name=\"PsalmOptionsConfiguration\">\r\n    <option name=\"transferred\" value=\"true\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/php.xml b/.idea/php.xml
+--- a/.idea/php.xml	(revision 0604248776d6e30425c5f4071c6c75b38c1eec46)
++++ b/.idea/php.xml	(date 1724943437242)
+@@ -13,8 +13,8 @@
+   <component name="PhpIncludePathManager">
+     <include_path>
+       <path value="$PROJECT_DIR$/docker/vendor/composer" />
+-      <path value="$PROJECT_DIR$/src/vendor/composer" />
+-      <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
++      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
++      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+       <path value="$PROJECT_DIR$/src/vendor/brick/math" />
+       <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+     </include_path>

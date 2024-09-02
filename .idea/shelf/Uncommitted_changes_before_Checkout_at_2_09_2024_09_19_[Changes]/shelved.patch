@@ -1,0 +1,87 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3eb74b24-75eb-43a1-9fb5-a657d77bbc19\" name=\"Changes\" comment=\"Coding Standards, Autoloading (PSR-4) &amp; Composer\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/app/Enums/Status.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/public/index.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/public/index.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" synchronizationState=\"SYNCHRONIZE\">\r\n    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>\r\n    <execution>\r\n      <executable path=\"composer\" />\r\n    </execution>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"2.5\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;secakalfaoglu&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/secakalfaoglu/learnphptherightway-project.git&quot;,\r\n    &quot;accountId&quot;: &quot;4317edfb-ba64-45c6-86f3-368ea8aa021e&quot;\r\n  }\r\n}</component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\xampp\\php\\php.exe\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/docker/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/ramsey/uuid\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/brick/math\" />\r\n      <path value=\"$PROJECT_DIR$/src/vendor/ramsey/collection\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2lC3NpwmZxs4HaZIWJWthPytxo8\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"PHP Script.Transaction.php.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"2.6\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\secanur.kalfaoglu\\PhpstormProjects\\learnphptherightway-project\\src\" />\r\n      <recent name=\"C:\\Users\\secanur.kalfaoglu\\PhpstormProjects\\learnphptherightway-project\\src\\public\" />\r\n      <recent name=\"C:\\Users\\secanur.kalfaoglu\\PhpstormProjects\\learnphptherightway-project\\docker\" />\r\n      <recent name=\"C:\\Users\\secanur.kalfaoglu\\PhpstormProjects\\learnphptherightway-project\\src\\app\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.427\" />\r\n        <option value=\"bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.427\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"3eb74b24-75eb-43a1-9fb5-a657d77bbc19\" name=\"Changes\" comment=\"\" />\r\n      <created>1724670193357</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1724670193357</updated>\r\n      <workItem from=\"1724670194434\" duration=\"1838000\" />\r\n      <workItem from=\"1724680470604\" duration=\"658000\" />\r\n      <workItem from=\"1724681657558\" duration=\"1480000\" />\r\n      <workItem from=\"1724738779874\" duration=\"1511000\" />\r\n      <workItem from=\"1724740399911\" duration=\"2965000\" />\r\n      <workItem from=\"1724743392529\" duration=\"2798000\" />\r\n      <workItem from=\"1724746220273\" duration=\"13191000\" />\r\n      <workItem from=\"1724825620987\" duration=\"16502000\" />\r\n      <workItem from=\"1724911449073\" duration=\"12862000\" />\r\n      <workItem from=\"1724935104371\" duration=\"6370000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"2.1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724745100949</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724745100949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"2.1\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724746109953</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724746109953</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"2.2\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724770179925</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724770179925</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Nullsafe Operator\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724836724140</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724836724140</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Nullsafe Operator\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724836769675</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724836769675</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Coding Standards, Autoloading (PSR-4) &amp; Composer\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1724940056522</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1724940056522</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"Branch\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"upstream/2.1\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"2.1\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                  <entry key=\"text\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"2.1\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"2.1\" />\r\n    <MESSAGE value=\"2.2\" />\r\n    <MESSAGE value=\"Nullsafe Operator\" />\r\n    <MESSAGE value=\"Coding Standards, Autoloading (PSR-4) &amp; Composer\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Coding Standards, Autoloading (PSR-4) &amp; Composer\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0604248776d6e30425c5f4071c6c75b38c1eec46)
++++ b/.idea/workspace.xml	(date 1725257884675)
+@@ -5,7 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Coding Standards, Autoloading (PSR-4) &amp; Composer">
+-      <change afterPath="$PROJECT_DIR$/src/app/Enums/Status.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
+@@ -44,10 +44,12 @@
+   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
+     <include_path>
+       <path value="$PROJECT_DIR$/docker/vendor/composer" />
++      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
++      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
++      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
++      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+       <path value="$PROJECT_DIR$/src/vendor/composer" />
+       <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
+-      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
+-      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+     </include_path>
+   </component>
+   <component name="ProjectColorInfo">{
+@@ -58,19 +60,19 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "PHP Script.Transaction.php.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "2.6",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;PHP Script.Transaction.php.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;2.7&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src" />
+@@ -82,8 +84,8 @@
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.427" />
+-        <option value="bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.427" />
++        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
++        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -105,6 +107,9 @@
+       <workItem from="1724825620987" duration="16502000" />
+       <workItem from="1724911449073" duration="12862000" />
+       <workItem from="1724935104371" duration="6370000" />
++      <workItem from="1725257055666" duration="39000" />
++      <workItem from="1725257227301" duration="78000" />
++      <workItem from="1725257345274" duration="538000" />
+     </task>
+     <task id="LOCAL-00001" summary="2.1">
+       <option name="closed" value="true" />
