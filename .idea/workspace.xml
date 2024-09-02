@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Static Ptroperties &amp; Methods In Object Oriented PHP">
+    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Encapsulation &amp; Abstraction">
+      <change afterPath="$PROJECT_DIR$/src/app/FancyOven.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Toaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/ToasterPro.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/DB.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Enums/Status.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Notification/Email.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/CustomerProfile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Stripe/Transaction.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725261611984</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Encapsulation &amp; Abstraction">
+      <option name="closed" value="true" />
+      <created>1725265777571</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1725265777571</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +243,7 @@
     <MESSAGE value="Coding Standards, Autoloading (PSR-4) &amp; Composer" />
     <MESSAGE value="Class Constans" />
     <MESSAGE value="Static Ptroperties &amp; Methods In Object Oriented PHP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Static Ptroperties &amp; Methods In Object Oriented PHP" />
+    <MESSAGE value="Encapsulation &amp; Abstraction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation &amp; Abstraction" />
   </component>
 </project>
