@@ -1,26 +1,29 @@
 <?php
 
 
-use App\DB;
+
 use App\PaymentGateway\Paddle\Transaction;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 
-//$transaction = new Transaction(25,'Transaction 1');
-//var_dump($transaction::$count); //static olana erişim sağlanabilir böyle
-//var_dump(Transaction::getCount());
+$transaction = new Transaction(25);
 
-$transaction = new Transaction(25,'Transaction 1');
-/*$db = new DB([]);
-$db = new DB([]);
-$db = new DB([]);
-$db = new DB([]);*/
-//$db = DB::getInstance([]);
+//$transaction->amount=125;
+//$transaction->setAmount(125);
 
-$transaction->process();
-//var_dump($transaction::getCount());
-var_dump($transaction->amount);
+/*$reflectionProperty = new ReflectionProperty(Transaction::class, 'amount');
+
+$reflectionProperty->setAccessible(true);
+
+$reflectionProperty->setValue($transaction, 125);
+
+var_dump($reflectionProperty->getValue($transaction));*/
+
+//Abstraction
+
+$transaction->copyFrom(new Transaction(100));
+//$transaction->process();
 ?>
 
 
