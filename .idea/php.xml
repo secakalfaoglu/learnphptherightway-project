@@ -13,8 +13,8 @@
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/docker/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
       <path value="$PROJECT_DIR$/src/vendor/brick/math" />
       <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
     </include_path>

@@ -8,29 +8,29 @@
 
     class Transaction
     {
-//        private const STATUS_PAID = 'paid';
 
+        public static int $count=0;
 
-        private string $status ;
-        public function __construct()
-        {
-            //$this->setStatus('pending');
-            $this->setStatus(Status::PENDING);
-            //var_dump(self::STATUS_PAID);
+        public function __construct(
+            public float $amount,
+            public string $description
+        ){
+            self::$count++;
         }
-//        public function setStatus(string $status) : Transaction
-//        {
-//            $this->status = $status;
-//            return $this;
-//        }
-        public function setStatus(string $status) : self
-        {
-            if (! isset(Status::ALL_STATUSES[$status])) {
-                throw new \InvalidArgumentException("Invalid status");
-            }
 
-            $this->status = $status;
-            return $this;
+        public static function getCount(): int
+        {
+            return self::$count;
+        }
+
+        public function process(){
+
+            array_map(/*static */function()
+            {
+                $this->amount =35;
+                var_dump($this->amount);
+            },[1]);
+            echo 'Processing paddle transaction...' ;
         }
 
     }

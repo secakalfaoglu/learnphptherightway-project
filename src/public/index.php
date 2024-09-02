@@ -1,35 +1,26 @@
 <?php
 
 
-/*
-spl_autoload_register(function ($class) {
-    $path = __DIR__ . '/../' . lcfirst(str_replace('\\','/',$class) . '.php');
-    if (file_exists($path)) {
-        require_once $path;
-    }
-
-    //var_dump('Autoloader 1');
-});*/
-
-use App\Enums\Status;
+use App\DB;
 use App\PaymentGateway\Paddle\Transaction;
 
 require __DIR__ . '/../vendor/autoload.php';
 
 
-$transaction = new Transaction();
+//$transaction = new Transaction(25,'Transaction 1');
+//var_dump($transaction::$count); //static olana erişim sağlanabilir böyle
+//var_dump(Transaction::getCount());
 
-//echo Transaction::STATUS_PAID;
-//echo $transaction::STATUS_PAID;
+$transaction = new Transaction(25,'Transaction 1');
+/*$db = new DB([]);
+$db = new DB([]);
+$db = new DB([]);
+$db = new DB([]);*/
+//$db = DB::getInstance([]);
 
-//echo $transaction::class;
-//echo Transaction::class;
-
-//$transaction->setStatus('paid');
-$transaction->setStatus(Status::PAID);
-
-var_dump($transaction);
-
+$transaction->process();
+//var_dump($transaction::getCount());
+var_dump($transaction->amount);
 ?>
 
 
