@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Encapsulation &amp; Abstraction">
-      <change afterPath="$PROJECT_DIR$/src/app/FancyOven.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Toaster.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ToasterPro.php" afterDir="false" />
+    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Inharitance Explained">
+      <change afterPath="$PROJECT_DIR$/src/app/Boolean.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Checkbox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Field.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Radio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_30_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_30__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_31_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_31__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/DB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Enums/Status.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Notification/Email.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/CustomerProfile.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Paddle/Transaction.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PaymentGateway/Stripe/Transaction.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/FancyOven.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Toaster.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/ToasterPro.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +34,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2.7" />
+        <entry key="$PROJECT_DIR$" value="2.8" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,11 +54,16 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/docker/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/src/vendor/brick/math" />
       <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/src/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/src/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/ramsey/uuid" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -65,19 +73,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHP Script.Transaction.php.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2.8",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.Transaction.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2.10&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/secanur.kalfaoglu/Desktop/tuseb-admin-panel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src" />
@@ -89,8 +98,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-PS-242.20224.427" />
-        <option value="bundled-php-predefined-a98d8de5180a-d6acee4cb394-com.jetbrains.php.sharedIndexes-PS-242.20224.427" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
+        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
       </set>
     </attachedChunks>
   </component>
@@ -112,6 +121,11 @@
       <workItem from="1724825620987" duration="16502000" />
       <workItem from="1724911449073" duration="12862000" />
       <workItem from="1724935104371" duration="6510000" />
+      <workItem from="1725343409898" duration="1219000" />
+      <workItem from="1725373646641" duration="931000" />
+      <workItem from="1725521986810" duration="12000" />
+      <workItem from="1725524113514" duration="734000" />
+      <workItem from="1725538443440" duration="1195000" />
     </task>
     <task id="LOCAL-00001" summary="2.1">
       <option name="closed" value="true" />
@@ -185,7 +199,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725265777571</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Inharitance Explained">
+      <option name="closed" value="true" />
+      <created>1725274572464</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1725274572464</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Inharitance Explained">
+      <option name="closed" value="true" />
+      <created>1725274588270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1725274588270</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +274,7 @@
     <MESSAGE value="Class Constans" />
     <MESSAGE value="Static Ptroperties &amp; Methods In Object Oriented PHP" />
     <MESSAGE value="Encapsulation &amp; Abstraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation &amp; Abstraction" />
+    <MESSAGE value="Inharitance Explained" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inharitance Explained" />
   </component>
 </project>
