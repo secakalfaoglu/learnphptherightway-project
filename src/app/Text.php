@@ -2,12 +2,7 @@
 
 namespace App;
 
-class Text extends Field
+class Text
 {
-    public function render(): string
-    {
-        return <<<HTML
- <input type="text" name="{$this->name}" />
-HTML;
-    }
+
 }

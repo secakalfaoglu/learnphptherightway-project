@@ -2,14 +2,14 @@
 
 namespace App;
 
-abstract class Field
+abstract class Field implements Renderable
 {
-    public function __construct(protected string $name )
+    public function __construct(protected string $name)
     {
 
     }
 
-    abstract function render(): string;
+
 
 
 }

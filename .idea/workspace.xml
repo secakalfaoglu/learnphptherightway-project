@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Inharitance Explained">
-      <change afterPath="$PROJECT_DIR$/src/app/Boolean.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Checkbox.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Field.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Radio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Text.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_30_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_30__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_31_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_28_08_2024_11_31__Changes_.xml" beforeDir="false" />
+    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Interfaces &amp; Polymorphism">
+      <change afterPath="$PROJECT_DIR$/src/app/AnotherInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/CollectionAgency.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/DebtCollectionService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/DebtCollector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Renderable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Rocky.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/SomeOtherInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_09_2024_09_19_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_09_2024_09_19__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/FancyOven.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Toaster.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/ToasterPro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Boolean.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Checkbox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Field.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Field.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Radio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Text.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2.8" />
+        <entry key="$PROJECT_DIR$" value="2.10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,13 +79,14 @@
   &quot;keyToString&quot;: {
     &quot;PHP Script.Transaction.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;2.10&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2.11&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/secanur.kalfaoglu/Desktop/tuseb-admin-panel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -125,7 +128,12 @@
       <workItem from="1725373646641" duration="931000" />
       <workItem from="1725521986810" duration="12000" />
       <workItem from="1725524113514" duration="734000" />
-      <workItem from="1725538443440" duration="1195000" />
+      <workItem from="1725538443440" duration="4140000" />
+      <workItem from="1725543596597" duration="33000" />
+      <workItem from="1725544109440" duration="1784000" />
+      <workItem from="1725546982982" duration="1227000" />
+      <workItem from="1725604904802" duration="10000" />
+      <workItem from="1725948361771" duration="2291000" />
     </task>
     <task id="LOCAL-00001" summary="2.1">
       <option name="closed" value="true" />
@@ -215,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725274588270</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Abstract Classes &amp; Methods">
+      <option name="closed" value="true" />
+      <created>1725539954946</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1725539954946</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +291,8 @@
     <MESSAGE value="Static Ptroperties &amp; Methods In Object Oriented PHP" />
     <MESSAGE value="Encapsulation &amp; Abstraction" />
     <MESSAGE value="Inharitance Explained" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inharitance Explained" />
+    <MESSAGE value="Abstract Classes &amp; Methods" />
+    <MESSAGE value="Interfaces &amp; Polymorphism" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interfaces &amp; Polymorphism" />
   </component>
 </project>
