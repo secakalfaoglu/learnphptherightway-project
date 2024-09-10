@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Interfaces &amp; Polymorphism">
+    <list default="true" id="3eb74b24-75eb-43a1-9fb5-a657d77bbc19" name="Changes" comment="Magic Methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/AnotherInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/CollectionAgency.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/DebtCollectionService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/DebtCollector.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Field.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Renderable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Rocky.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/SomeOtherInterface.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Text.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Invoice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Invoice.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="2.11" />
+        <entry key="$PROJECT_DIR$" value="2.12" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,21 +63,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "PHP Script.Transaction.php.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "2.12",
-    "last_opened_file_path": "C:/Users/secanur.kalfaoglu/Desktop/tuseb-admin-panel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;PHP Script.Transaction.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2.29&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/secanur.kalfaoglu/Desktop/tuseb-admin-panel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\secanur.kalfaoglu\PhpstormProjects\learnphptherightway-project\src" />
@@ -128,7 +121,8 @@
       <workItem from="1725544109440" duration="1784000" />
       <workItem from="1725546982982" duration="1227000" />
       <workItem from="1725604904802" duration="10000" />
-      <workItem from="1725948361771" duration="3134000" />
+      <workItem from="1725948361771" duration="6233000" />
+      <workItem from="1725955135105" duration="1611000" />
     </task>
     <task id="LOCAL-00001" summary="2.1">
       <option name="closed" value="true" />
@@ -234,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725950673736</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Magic Methods">
+      <option name="closed" value="true" />
+      <created>1725951566180</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1725951566181</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +298,7 @@
     <MESSAGE value="Inharitance Explained" />
     <MESSAGE value="Abstract Classes &amp; Methods" />
     <MESSAGE value="Interfaces &amp; Polymorphism" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interfaces &amp; Polymorphism" />
+    <MESSAGE value="Magic Methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Magic Methods" />
   </component>
 </project>
