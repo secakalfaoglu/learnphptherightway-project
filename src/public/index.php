@@ -1,15 +1,12 @@
 <?php
 
+
+
 require_once  __DIR__ .  '/../vendor/autoload.php';
 
-//$collector = new \App\CollectionAgency();
-//echo $collector->collect(100). PHP_EOL;
+$invoice = new App\Invoice();
 
-$service = new \App\DebtCollectionService();
-//echo $service->collectDebt(new \App\CollectionAgency()). PHP_EOL;
-echo $service->collectDebt(new \App\Rocky()). PHP_EOL;
+var_dump($invoice);
 
 
-
-?>
 
